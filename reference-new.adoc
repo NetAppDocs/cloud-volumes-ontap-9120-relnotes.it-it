@@ -1,0 +1,80 @@
+---
+sidebar: sidebar 
+permalink: reference-new.html 
+keywords: new, new features, features, release notes, enhancements 
+summary: Cloud Volumes ONTAP 9.12.0 include un nuovo miglioramento. 
+---
+= Novità di Cloud Volumes ONTAP 9.12.0
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cloud Volumes ONTAP 9.12.0 include un nuovo miglioramento.
+
+Ulteriori funzionalità e miglioramenti sono stati introdotti anche nelle ultime versioni di BlueXP. Per https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["Note di rilascio di BlueXP"^] ulteriori informazioni, vedere la .
+
+
+
+== 9.12.0 P1 (15 Dec 2022)
+
+Cloud Volumes ONTAP 9.12.0 P1 è ora disponibile in AWS e Google Cloud. Questa versione include la seguente nuova funzione.
+
+
+
+=== Supporto per m6id.32xlarge in AWS
+
+Cloud Volumes ONTAP è ora supportato con il tipo di istanza m6id.32xlarge EC2 in AWS.
+
+Per ulteriori informazioni, consultare la link:reference-configs-aws.html["pagina configurazioni supportate"]sezione.
+
+
+
+== Note sull'aggiornamento
+
+Leggi queste note per ulteriori informazioni sull'aggiornamento a questa release.
+
+
+
+=== Come eseguire l'upgrade
+
+Gli aggiornamenti di Cloud Volumes ONTAP devono essere completati da BlueXP. Non aggiornare Cloud Volumes ONTAP utilizzando Gestione di sistema o l'interfaccia CLI. In questo modo si può influire sulla stabilità del sistema.
+
+http://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html["Scopri come eseguire l'aggiornamento quando BlueXP ti notifica"^].
+
+
+
+=== Percorso di upgrade supportato
+
+È possibile eseguire l'aggiornamento a Cloud Volumes ONTAP 9.12.0 dalla versione 9.11.1. BlueXP richiederà di aggiornare i sistemi Cloud Volumes ONTAP idonei a questa versione.
+
+
+
+=== Versione richiesta del connettore
+
+BlueXP  Connector deve eseguire la versione 3.9.24 o successiva per distribuire nuovi sistemi Cloud Volumes ONTAP 9.12.0 e per aggiornare i sistemi esistenti a questa versione.
+
+
+TIP: Gli aggiornamenti automatici del connettore sono attivati per impostazione predefinita, pertanto dovrebbe essere in esecuzione la versione più recente.
+
+
+
+=== Downtime
+
+* L'aggiornamento di un sistema a nodo singolo porta il sistema offline per un massimo di 25 minuti, durante i quali l'i/o viene interrotto.
+* L'aggiornamento di una coppia ha è senza interruzioni e l'i/o è ininterrotto. Durante questo processo di aggiornamento senza interruzioni, ogni nodo viene aggiornato in tandem per continuare a fornire i/o ai client.
+
+
+
+
+=== Upgrade in AWS con tipi di istanze C4, M4 e R4 EC2
+
+In AWS, i tipi di istanze C4, M4 e R4 EC2 non sono più supportati con le nuove implementazioni di Cloud Volumes ONTAP. Se si dispone di un sistema in esecuzione su un tipo di istanza c4, m4 o r4, è necessario passare a un tipo di istanza nella famiglia di istanze c5, m5 o r5. Se non è possibile modificare il tipo di istanza, è necessario abilitare la rete avanzata prima di eseguire l'aggiornamento.
+
+link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html#upgrades-in-aws-with-c4-m4-and-r4-ec2-instance-types["Scopri come eseguire l'upgrade in AWS con i tipi di istanza C4, M4 e R4 EC2"^]. link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-change-ec2-instance.html["Scopri come modificare il tipo di istanza EC2 per Cloud Volumes ONTAP"^].
+
+Fare riferimento a link:https://mysupport.netapp.com/info/communications/ECMLP2880231.html["Supporto NetApp"^] per ulteriori informazioni sulla fine della disponibilità e sul supporto per questi tipi di istanza.
