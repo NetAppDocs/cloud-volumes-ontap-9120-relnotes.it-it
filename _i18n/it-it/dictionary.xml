@@ -2,7 +2,6 @@
 <blocks>
   <block id="e70747c71702cdc100bd5f592ed452be" category="summary">Per Cloud Volumes ONTAP sono disponibili diverse opzioni di licenza. Ciascuna opzione consente di scegliere una configurazione che soddisfi le proprie esigenze.</block>
   <block id="be02aeef4770b69cefbe40935aba2797" category="doc">Licensing per Cloud Volumes ONTAP</block>
-  <block id="30af1a6878bac3a7aaed5d0e64e7b511" category="paragraph">Cloud Volumes ONTAP offre diverse opzioni di licenza che consentono di scegliere un modello di consumo che soddisfi le tue esigenze.</block>
   <block id="f008ecd5469e24eee31eb4e2e4a1e23f" category="paragraph">Per i nuovi clienti sono disponibili le seguenti opzioni di licenza.</block>
   <block id="19bcaffbe8361f9d452beabc8065f223" category="list-text">Pacchetti di licenze basati sulla capacità</block>
   <block id="e7cf94fb6f7d5441689859c52b410a98" category="list-text">Le licenze basate sulla capacità consentono di pagare Cloud Volumes ONTAP per TIB di capacità. La licenza è associata al tuo account NetApp e ti consente di addebitare la licenza a più sistemi, purché sia disponibile una capacità sufficiente attraverso la licenza.</block>
@@ -638,7 +637,6 @@
   <block id="1222cf807490df82fd7e0146eb6798c1" category="paragraph">Quando viene annunciata la finestra di manutenzione, il nodo partner del nodo di destinazione esegue un takeover. Una volta completata la manutenzione, viene avviato un giveback. Dopo il giveback, si prevede che la coppia ha torni a uno stato di salute. In caso contrario, contattare il supporto NetApp per assistenza. Si noti che gli eventi di manutenzione sono mirati a una delle macchine virtuali di una coppia ha alla volta, e in genere entrambi i nodi sono mirati in un periodo di tempo relativamente breve.</block>
   <block id="1355c3042f61af06b4a61506de6e8ad1" category="paragraph">I client CIFS/SMB che utilizzano condivisioni CIFS Cloud Volumes ONTAP non continuamente disponibili subiranno una perdita di sessione sia quando si verifica un Takeover sia quando l'aggregato utilizzato dalla sessione viene restituita al nodo principale dell'aggregato. Si tratta di un limite imposto dal protocollo CIFS/SMB stesso. I clienti potrebbero voler utilizzare prodotti di terze parti per evitare problemi che potrebbero derivare da takeover e giveback. Per ulteriore assistenza, contatta il supporto NetApp.</block>
   <block id="6bdf72ac241a1b505deb0094dcc551a4" category="sidebar">Queste note di rilascio descrivono nuove funzionalità, limitazioni e problemi noti di Cloud Volumes ONTAP 9.12.0.</block>
-  <block id="9b35e8c83aa7d0298b0eff1e6b7a9a77" category="sidebar">Note sulla versione di Cloud Volumes ONTAP 9.12.0</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">Inizia subito</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">Novità</block>
   <block id="8efc36afc2e7202a9c9bda00b8e8a75d" category="sidebar">Panoramica sulle licenze</block>
@@ -652,7 +650,6 @@
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">Community NetApp</block>
   <block id="bd5465eb0e8cf8f303aee7ea9420c8b1" category="sidebar">Blog BlueXP</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">Webinar sul cloud</block>
-  <block id="da38098873cb3db962a9491ab33ff93d" category="sidebar">Note di rilascio home</block>
   <block id="4847e034bb0a55fcbc8a3380d6a3ab80" category="sidebar">AWS</block>
   <block id="3a580f142203677f1f0bc30898f63f53" category="sidebar">Azure</block>
   <block id="482723983a4f2af954e36ff41e567451" category="sidebar">Limitazioni note</block>
@@ -660,4 +657,11 @@
   <block id="5313a9ac102424f63dd4d76f5280130e" category="sidebar">Limitazioni in AWS</block>
   <block id="1fff298355326f8c77bd77059a41c1a2" category="sidebar">Limitazioni in Azure</block>
   <block id="9a3a0c4b2afbb088e029484d4b34ba8b" category="sidebar">Limitazioni di Google Cloud</block>
+  <block id="6b32e99bddf60938239aabe092cb4c16" category="paragraph">Per Cloud Volumes ONTAP sono disponibili diverse opzioni di licenza. Ciascuna opzione consente di scegliere un modello di consumo che soddisfi le proprie esigenze.</block>
+  <block id="27fe4eb3edbaff8f250e2d51f7462681" category="inline-link">Pacchetti</block>
+  <block id="13dba612a4f942a80cbc82c5f678d57c" category="inline-link">Ulteriori informazioni sulle licenze basate sulla capacità</block>
+  <block id="d994821c78c4538d3406d1baa52bc470" category="paragraph"><block ref="55cb08b70ffaa99b7ec18860c0180e14" category="inline-link-rx"></block> <block ref="7c9574dfed81dad53ed1c2acf3a874b5" category="inline-link-rx"></block></block>
+  <block id="c3647f40e3574e0e6f49e20c19135bfa" category="section-title">Limitazioni con l'utilizzo delle estensioni VM di Azure</block>
+  <block id="9d167ed7d52d81da8d83590ec3b5a4af" category="paragraph">Cloud Volumes ONTAP non supporta le estensioni della macchina virtuale Azure e le applicazioni delle macchine virtuali in un'implementazione. L'utilizzo di Cloud Volumes ONTAP in Azure con estensioni VM provoca ritardi nelle operazioni e NetApp consiglia di evitarli.</block>
+  <block id="a6c05065d2d7f18666563629721d0545" category="sidebar">Note sulla versione di Cloud Volumes ONTAP 9.12.0</block>
 </blocks>
